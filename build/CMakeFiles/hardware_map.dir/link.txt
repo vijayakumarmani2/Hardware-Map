@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/hardware_map.dir/main.cpp.o CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o CMakeFiles/hardware_map.dir/memory/memory.cpp.o CMakeFiles/hardware_map.dir/ram/ram.cpp.o CMakeFiles/hardware_map.dir/display/display.cpp.o -o hardware_map  -lX11 -lXext -lXrandr -lX11 -lXext -lXrandr 
