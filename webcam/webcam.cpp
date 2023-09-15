@@ -7,7 +7,32 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <sys/types.h>
+#include <dirent.h>
+#include <map>
+#include <libudev.h>
+#include <unistd.h>
+#include <set>
 
+
+
+// Function to fetch details using udevadm
+std::string execCmd(const char* cmd) {
+    char buffer[128];
+    std::string result = "";
+    FILE* pipe = popen(cmd, "r");
+    if (!pipe) throw std::runtime_error("popen() failed!");
+    try {
+        while (fgets(buffer, sizeof buffer, pipe) != NULL) {
+            result += buffer;
+        }
+    } catch (...) {
+        pclose(pipe);
+        throw;
+    }
+    pclose(pipe);
+    return result;
+}
 std::string fourccToString(uint32_t fourcc) {
     std::string res;
     for (int i = 0; i < 4; ++i) {
@@ -96,7 +121,88 @@ std::vector<std::string> capabilitiesToString(unsigned int caps) {
     return capabilities;
 }
 
+// Function to load usb.ids into a map
+std::map<std::string, std::string> loadUsbIds_1(const std::string &path) {
+    std::map<std::string, std::string> usbIds;
+    std::ifstream file(path);
+    if (!file.is_open()) {
+        std::cerr << "Error: Could not open " << path << std::endl;
+        return usbIds;
+    }
+
+    std::string line;
+    while (getline(file, line)) {
+        if (line.empty() || line[0] == '#' || line[0] == '\t') continue; // Skip comments, empty lines, and product lines
+
+        std::string id = line.substr(0, 4);
+        std::string name = line.substr(6);
+       // std::cerr << "name:  " << name << std::endl;
+        usbIds[id] = name;
+    }
+
+    file.close();
+    return usbIds;
+}
+
+
+//main function
 void webcam() {
+
+     struct udev *udev;
+    struct udev_enumerate *enumerate;
+    struct udev_list_entry *devices, *dev_list_entry;
+
+    // Initialize the udev object
+    udev = udev_new();
+    if (!udev) {
+        std::cerr << "Failed to initialize udev" << std::endl;
+        //return 1;
+    }
+
+std::string vendorName;
+const char *vendorId;
+std::set<std::string> printedVendors;
+// char cwd[1024];
+// if (getcwd(cwd, sizeof(cwd)) != NULL) {
+    //std::string fullPath = std::string(cwd) + "/../usb.ids"; 
+     auto usbIds = loadUsbIds_1("/home/vijay-16033/Documents/Repos_handler/Hardware_Map/usbmap/usb.ids");
+      // Create a list of devices in the 'video4linux' subsystem
+    enumerate = udev_enumerate_new(udev);
+    udev_enumerate_add_match_subsystem(enumerate, "video4linux");
+    udev_enumerate_scan_devices(enumerate);
+    devices = udev_enumerate_get_list_entry(enumerate);
+
+    // For each device...
+    udev_list_entry_foreach(dev_list_entry, devices) {
+        const char* path = udev_list_entry_get_name(dev_list_entry);
+        struct udev_device* dev = udev_device_new_from_syspath(udev, path);
+
+        // Navigate to the parent USB device to get details
+        struct udev_device* parent = udev_device_get_parent_with_subsystem_devtype(dev, "usb", "usb_device");
+        if (parent) {
+            vendorId = udev_device_get_sysattr_value(parent, "idVendor");
+            const char *productId = udev_device_get_sysattr_value(parent, "idProduct");
+
+             vendorName = usbIds[std::string(vendorId)]; // Look up the vendor name using the vendor ID
+
+           // std::cout << "Vendor: usb " << vendorId << " \"" << (vendorName.empty() ? "Unknown" : vendorName) << "\"" << std::endl;
+           // std::cout << "Device: usb " << productId << " \"" << (productId ? productId : "Unknown") << "\"" << std::endl; // Using productId directly since we're not mapping device names
+           // std::cout << "-------------------------------" << std::endl;
+        }
+
+        udev_device_unref(dev);
+    }
+// } else {
+//     std::cerr << "Error getting current working directory" << std::endl;
+// }
+
+   
+
+    // Cleanup
+    udev_enumerate_unref(enumerate);
+    udev_unref(udev);
+
+
     struct v4l2_queryctrl queryctrl;
     int fd = open("/dev/video0", O_RDWR); // Open the video device file
     if (fd == -1) {
@@ -113,6 +219,7 @@ void webcam() {
 
     // Print some information
     std::cout << "Driver Name: " << cap.driver << std::endl;
+    std::cout << "Vendor Name: " << (vendorName.empty() ? "Unknown" : vendorName) << std::endl;
     std::cout << "Card Type: " << cap.card << std::endl;
     std::cout << "Bus Info: " << cap.bus_info << std::endl;
     std::cout << "Driver Version: " << ((cap.version >> 16) & 0xFF) << "." << ((cap.version >> 8) & 0xFF) << "." << (cap.version & 0xFF) << std::endl;

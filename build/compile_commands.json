@@ -1,32 +1,52 @@
 [
 {
-  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/main.cpp.o -c \"/home/vijay-16033/Documents/Repos_handler/Hardware Map/main.cpp\"",
-  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware Map/main.cpp"
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/main.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/main.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/main.cpp"
 },
 {
-  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o -c \"/home/vijay-16033/Documents/Repos_handler/Hardware Map/cpu/cpu.cpp\"",
-  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware Map/cpu/cpu.cpp"
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/cpu/cpu.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/cpu/cpu.cpp"
 },
 {
-  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o -c \"/home/vijay-16033/Documents/Repos_handler/Hardware Map/webcam/webcam.cpp\"",
-  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware Map/webcam/webcam.cpp"
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/webcam/webcam.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/webcam/webcam.cpp"
 },
 {
-  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/memory/memory.cpp.o -c \"/home/vijay-16033/Documents/Repos_handler/Hardware Map/memory/memory.cpp\"",
-  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware Map/memory/memory.cpp"
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/memory/memory.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/memory/memory.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/memory/memory.cpp"
 },
 {
-  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/ram/ram.cpp.o -c \"/home/vijay-16033/Documents/Repos_handler/Hardware Map/ram/ram.cpp\"",
-  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware Map/ram/ram.cpp"
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/ram/ram.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/ram/ram.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/ram/ram.cpp"
 },
 {
-  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/display/display.cpp.o -c \"/home/vijay-16033/Documents/Repos_handler/Hardware Map/display/display.cpp\"",
-  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware Map/display/display.cpp"
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/display/display.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/display/display.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/display/display.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/wc.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/wc.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/wc.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/disk/disk.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/disk/disk.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/disk/disk.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/battery/battery.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/battery/battery.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/battery/battery.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/d.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/d.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/d.cpp"
 }
 ]

@@ -5,7 +5,10 @@ void webcam();
 void ram();
 void memory();
 void display();
-
+void webcam();
+//void d();
+void battery();
+void disk();
 int main(int argc, char* argv[]) {
     if (argc < 2) {
         std::cout << "Usage: hardware_map <cpu/webcam/memory/ram/display/all>" << std::endl;
@@ -22,7 +25,11 @@ int main(int argc, char* argv[]) {
     }else if (command == "ram") {
         ram();
     }else if (command == "display") {
-        display();
+        d();
+    }else if (command == "battery") {
+        battery();
+    }else if (command == "disk") {
+        disk();
     }else if (command == "all") {
         std::cout << "\n\n-------CPU Details--------\n" << std::endl;
         cpu();
@@ -34,6 +41,8 @@ int main(int argc, char* argv[]) {
         ram();
         std::cout << "\n\n-------Display Details-------\n" << std::endl;
         display();
+        std::cout << "\n\n-------Battery Details-------\n" << std::endl;
+        battery();
     } else {
         std::cout << "Unknown command!" << std::endl;
     }

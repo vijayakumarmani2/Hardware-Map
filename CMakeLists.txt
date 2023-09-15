@@ -17,9 +17,13 @@ endif()
 
 # ... rest of your CMake configuration
 
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(LIBUDEV REQUIRED libudev)
+include_directories(${LIBUDEV_INCLUDE_DIRS})
+
 # When defining your target, link against the found libraries
-add_executable(hardware_map main.cpp cpu/cpu.cpp webcam/webcam.cpp memory/memory.cpp ram/ram.cpp display/display.cpp)
-target_link_libraries(hardware_map ${X11_LIBRARIES} ${X11_Xrandr_LIB})
+add_executable(hardware_map main.cpp cpu/cpu.cpp webcam/webcam.cpp memory/memory.cpp ram/ram.cpp display/display.cpp wc.cpp disk/disk.cpp battery/battery.cpp d.cpp)
+target_link_libraries(hardware_map ${X11_LIBRARIES} ${X11_Xrandr_LIB} ${LIBUDEV_LIBRARIES})
 
 
 

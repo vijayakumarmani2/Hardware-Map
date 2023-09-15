@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/vijay-16033/Documents/Repos_handler/Hardware Map"
+CMAKE_SOURCE_DIR = /home/vijay-16033/Documents/Repos_handler/Hardware_Map
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build"
+CMAKE_BINARY_DIR = /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hardware_map.dir/depend.make
@@ -72,86 +72,142 @@ include CMakeFiles/hardware_map.dir/flags.make
 CMakeFiles/hardware_map.dir/main.cpp.o: CMakeFiles/hardware_map.dir/flags.make
 CMakeFiles/hardware_map.dir/main.cpp.o: ../main.cpp
 CMakeFiles/hardware_map.dir/main.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/vijay-16033/Documents/Repos_handler/Hardware Map/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hardware_map.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/main.cpp.o -MF CMakeFiles/hardware_map.dir/main.cpp.o.d -o CMakeFiles/hardware_map.dir/main.cpp.o -c "/home/vijay-16033/Documents/Repos_handler/Hardware Map/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hardware_map.dir/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/main.cpp.o -MF CMakeFiles/hardware_map.dir/main.cpp.o.d -o CMakeFiles/hardware_map.dir/main.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/main.cpp
 
 CMakeFiles/hardware_map.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/vijay-16033/Documents/Repos_handler/Hardware Map/main.cpp" > CMakeFiles/hardware_map.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/main.cpp > CMakeFiles/hardware_map.dir/main.cpp.i
 
 CMakeFiles/hardware_map.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/vijay-16033/Documents/Repos_handler/Hardware Map/main.cpp" -o CMakeFiles/hardware_map.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/main.cpp -o CMakeFiles/hardware_map.dir/main.cpp.s
 
 CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o: CMakeFiles/hardware_map.dir/flags.make
 CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o: ../cpu/cpu.cpp
 CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/vijay-16033/Documents/Repos_handler/Hardware Map/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o -MF CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o.d -o CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o -c "/home/vijay-16033/Documents/Repos_handler/Hardware Map/cpu/cpu.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o -MF CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o.d -o CMakeFiles/hardware_map.dir/cpu/cpu.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/cpu/cpu.cpp
 
 CMakeFiles/hardware_map.dir/cpu/cpu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/cpu/cpu.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/vijay-16033/Documents/Repos_handler/Hardware Map/cpu/cpu.cpp" > CMakeFiles/hardware_map.dir/cpu/cpu.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/cpu/cpu.cpp > CMakeFiles/hardware_map.dir/cpu/cpu.cpp.i
 
 CMakeFiles/hardware_map.dir/cpu/cpu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/cpu/cpu.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/vijay-16033/Documents/Repos_handler/Hardware Map/cpu/cpu.cpp" -o CMakeFiles/hardware_map.dir/cpu/cpu.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/cpu/cpu.cpp -o CMakeFiles/hardware_map.dir/cpu/cpu.cpp.s
 
 CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o: CMakeFiles/hardware_map.dir/flags.make
 CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o: ../webcam/webcam.cpp
 CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/vijay-16033/Documents/Repos_handler/Hardware Map/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o -MF CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o.d -o CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o -c "/home/vijay-16033/Documents/Repos_handler/Hardware Map/webcam/webcam.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o -MF CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o.d -o CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/webcam/webcam.cpp
 
 CMakeFiles/hardware_map.dir/webcam/webcam.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/webcam/webcam.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/vijay-16033/Documents/Repos_handler/Hardware Map/webcam/webcam.cpp" > CMakeFiles/hardware_map.dir/webcam/webcam.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/webcam/webcam.cpp > CMakeFiles/hardware_map.dir/webcam/webcam.cpp.i
 
 CMakeFiles/hardware_map.dir/webcam/webcam.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/webcam/webcam.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/vijay-16033/Documents/Repos_handler/Hardware Map/webcam/webcam.cpp" -o CMakeFiles/hardware_map.dir/webcam/webcam.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/webcam/webcam.cpp -o CMakeFiles/hardware_map.dir/webcam/webcam.cpp.s
 
 CMakeFiles/hardware_map.dir/memory/memory.cpp.o: CMakeFiles/hardware_map.dir/flags.make
 CMakeFiles/hardware_map.dir/memory/memory.cpp.o: ../memory/memory.cpp
 CMakeFiles/hardware_map.dir/memory/memory.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/vijay-16033/Documents/Repos_handler/Hardware Map/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hardware_map.dir/memory/memory.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/memory/memory.cpp.o -MF CMakeFiles/hardware_map.dir/memory/memory.cpp.o.d -o CMakeFiles/hardware_map.dir/memory/memory.cpp.o -c "/home/vijay-16033/Documents/Repos_handler/Hardware Map/memory/memory.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hardware_map.dir/memory/memory.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/memory/memory.cpp.o -MF CMakeFiles/hardware_map.dir/memory/memory.cpp.o.d -o CMakeFiles/hardware_map.dir/memory/memory.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/memory/memory.cpp
 
 CMakeFiles/hardware_map.dir/memory/memory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/memory/memory.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/vijay-16033/Documents/Repos_handler/Hardware Map/memory/memory.cpp" > CMakeFiles/hardware_map.dir/memory/memory.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/memory/memory.cpp > CMakeFiles/hardware_map.dir/memory/memory.cpp.i
 
 CMakeFiles/hardware_map.dir/memory/memory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/memory/memory.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/vijay-16033/Documents/Repos_handler/Hardware Map/memory/memory.cpp" -o CMakeFiles/hardware_map.dir/memory/memory.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/memory/memory.cpp -o CMakeFiles/hardware_map.dir/memory/memory.cpp.s
 
 CMakeFiles/hardware_map.dir/ram/ram.cpp.o: CMakeFiles/hardware_map.dir/flags.make
 CMakeFiles/hardware_map.dir/ram/ram.cpp.o: ../ram/ram.cpp
 CMakeFiles/hardware_map.dir/ram/ram.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/vijay-16033/Documents/Repos_handler/Hardware Map/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/hardware_map.dir/ram/ram.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/ram/ram.cpp.o -MF CMakeFiles/hardware_map.dir/ram/ram.cpp.o.d -o CMakeFiles/hardware_map.dir/ram/ram.cpp.o -c "/home/vijay-16033/Documents/Repos_handler/Hardware Map/ram/ram.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/hardware_map.dir/ram/ram.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/ram/ram.cpp.o -MF CMakeFiles/hardware_map.dir/ram/ram.cpp.o.d -o CMakeFiles/hardware_map.dir/ram/ram.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/ram/ram.cpp
 
 CMakeFiles/hardware_map.dir/ram/ram.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/ram/ram.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/vijay-16033/Documents/Repos_handler/Hardware Map/ram/ram.cpp" > CMakeFiles/hardware_map.dir/ram/ram.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/ram/ram.cpp > CMakeFiles/hardware_map.dir/ram/ram.cpp.i
 
 CMakeFiles/hardware_map.dir/ram/ram.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/ram/ram.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/vijay-16033/Documents/Repos_handler/Hardware Map/ram/ram.cpp" -o CMakeFiles/hardware_map.dir/ram/ram.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/ram/ram.cpp -o CMakeFiles/hardware_map.dir/ram/ram.cpp.s
 
 CMakeFiles/hardware_map.dir/display/display.cpp.o: CMakeFiles/hardware_map.dir/flags.make
 CMakeFiles/hardware_map.dir/display/display.cpp.o: ../display/display.cpp
 CMakeFiles/hardware_map.dir/display/display.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/vijay-16033/Documents/Repos_handler/Hardware Map/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/hardware_map.dir/display/display.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/display/display.cpp.o -MF CMakeFiles/hardware_map.dir/display/display.cpp.o.d -o CMakeFiles/hardware_map.dir/display/display.cpp.o -c "/home/vijay-16033/Documents/Repos_handler/Hardware Map/display/display.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/hardware_map.dir/display/display.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/display/display.cpp.o -MF CMakeFiles/hardware_map.dir/display/display.cpp.o.d -o CMakeFiles/hardware_map.dir/display/display.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/display/display.cpp
 
 CMakeFiles/hardware_map.dir/display/display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/display/display.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/vijay-16033/Documents/Repos_handler/Hardware Map/display/display.cpp" > CMakeFiles/hardware_map.dir/display/display.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/display/display.cpp > CMakeFiles/hardware_map.dir/display/display.cpp.i
 
 CMakeFiles/hardware_map.dir/display/display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/display/display.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/vijay-16033/Documents/Repos_handler/Hardware Map/display/display.cpp" -o CMakeFiles/hardware_map.dir/display/display.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/display/display.cpp -o CMakeFiles/hardware_map.dir/display/display.cpp.s
+
+CMakeFiles/hardware_map.dir/wc.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/wc.cpp.o: ../wc.cpp
+CMakeFiles/hardware_map.dir/wc.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/hardware_map.dir/wc.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/wc.cpp.o -MF CMakeFiles/hardware_map.dir/wc.cpp.o.d -o CMakeFiles/hardware_map.dir/wc.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/wc.cpp
+
+CMakeFiles/hardware_map.dir/wc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/wc.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/wc.cpp > CMakeFiles/hardware_map.dir/wc.cpp.i
+
+CMakeFiles/hardware_map.dir/wc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/wc.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/wc.cpp -o CMakeFiles/hardware_map.dir/wc.cpp.s
+
+CMakeFiles/hardware_map.dir/disk/disk.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/disk/disk.cpp.o: ../disk/disk.cpp
+CMakeFiles/hardware_map.dir/disk/disk.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/hardware_map.dir/disk/disk.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/disk/disk.cpp.o -MF CMakeFiles/hardware_map.dir/disk/disk.cpp.o.d -o CMakeFiles/hardware_map.dir/disk/disk.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/disk/disk.cpp
+
+CMakeFiles/hardware_map.dir/disk/disk.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/disk/disk.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/disk/disk.cpp > CMakeFiles/hardware_map.dir/disk/disk.cpp.i
+
+CMakeFiles/hardware_map.dir/disk/disk.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/disk/disk.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/disk/disk.cpp -o CMakeFiles/hardware_map.dir/disk/disk.cpp.s
+
+CMakeFiles/hardware_map.dir/battery/battery.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/battery/battery.cpp.o: ../battery/battery.cpp
+CMakeFiles/hardware_map.dir/battery/battery.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/hardware_map.dir/battery/battery.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/battery/battery.cpp.o -MF CMakeFiles/hardware_map.dir/battery/battery.cpp.o.d -o CMakeFiles/hardware_map.dir/battery/battery.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/battery/battery.cpp
+
+CMakeFiles/hardware_map.dir/battery/battery.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/battery/battery.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/battery/battery.cpp > CMakeFiles/hardware_map.dir/battery/battery.cpp.i
+
+CMakeFiles/hardware_map.dir/battery/battery.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/battery/battery.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/battery/battery.cpp -o CMakeFiles/hardware_map.dir/battery/battery.cpp.s
+
+CMakeFiles/hardware_map.dir/d.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/d.cpp.o: ../d.cpp
+CMakeFiles/hardware_map.dir/d.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/hardware_map.dir/d.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/d.cpp.o -MF CMakeFiles/hardware_map.dir/d.cpp.o.d -o CMakeFiles/hardware_map.dir/d.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/d.cpp
+
+CMakeFiles/hardware_map.dir/d.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/d.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/d.cpp > CMakeFiles/hardware_map.dir/d.cpp.i
+
+CMakeFiles/hardware_map.dir/d.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/d.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/d.cpp -o CMakeFiles/hardware_map.dir/d.cpp.s
 
 # Object files for target hardware_map
 hardware_map_OBJECTS = \
@@ -160,7 +216,11 @@ hardware_map_OBJECTS = \
 "CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o" \
 "CMakeFiles/hardware_map.dir/memory/memory.cpp.o" \
 "CMakeFiles/hardware_map.dir/ram/ram.cpp.o" \
-"CMakeFiles/hardware_map.dir/display/display.cpp.o"
+"CMakeFiles/hardware_map.dir/display/display.cpp.o" \
+"CMakeFiles/hardware_map.dir/wc.cpp.o" \
+"CMakeFiles/hardware_map.dir/disk/disk.cpp.o" \
+"CMakeFiles/hardware_map.dir/battery/battery.cpp.o" \
+"CMakeFiles/hardware_map.dir/d.cpp.o"
 
 # External object files for target hardware_map
 hardware_map_EXTERNAL_OBJECTS =
@@ -171,6 +231,10 @@ hardware_map: CMakeFiles/hardware_map.dir/webcam/webcam.cpp.o
 hardware_map: CMakeFiles/hardware_map.dir/memory/memory.cpp.o
 hardware_map: CMakeFiles/hardware_map.dir/ram/ram.cpp.o
 hardware_map: CMakeFiles/hardware_map.dir/display/display.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/wc.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/disk/disk.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/battery/battery.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/d.cpp.o
 hardware_map: CMakeFiles/hardware_map.dir/build.make
 hardware_map: /usr/lib/x86_64-linux-gnu/libX11.so
 hardware_map: /usr/lib/x86_64-linux-gnu/libXext.so
@@ -179,7 +243,7 @@ hardware_map: /usr/lib/x86_64-linux-gnu/libX11.so
 hardware_map: /usr/lib/x86_64-linux-gnu/libXext.so
 hardware_map: /usr/lib/x86_64-linux-gnu/libXrandr.so
 hardware_map: CMakeFiles/hardware_map.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/vijay-16033/Documents/Repos_handler/Hardware Map/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable hardware_map"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable hardware_map"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hardware_map.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -191,6 +255,6 @@ CMakeFiles/hardware_map.dir/clean:
 .PHONY : CMakeFiles/hardware_map.dir/clean
 
 CMakeFiles/hardware_map.dir/depend:
-	cd "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/vijay-16033/Documents/Repos_handler/Hardware Map" "/home/vijay-16033/Documents/Repos_handler/Hardware Map" "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build" "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build" "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build/CMakeFiles/hardware_map.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vijay-16033/Documents/Repos_handler/Hardware_Map /home/vijay-16033/Documents/Repos_handler/Hardware_Map /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles/hardware_map.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hardware_map.dir/depend
 

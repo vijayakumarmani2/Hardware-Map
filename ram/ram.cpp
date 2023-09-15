@@ -41,7 +41,7 @@ void print_physical_memory_array(const uint8_t *data, const dmi_header *hdr) {
     uint32_t max_capacity = *(uint32_t *)(data + 0x07);
     uint16_t num_devices = *(uint16_t *)(data + 0x0D);
 
-    printf("--------RAM memeory info---------\n");
+   // printf("--------RAM memeory info---------\n");
     printf("Handle 0x%04X, DMI type 16, %d bytes\n", handle, hdr->length);
     printf("Physical Memory Array\n");
     printf("\tLocation: %s\n", location == 0x03 ? "System Board Or Motherboard" : "Other");

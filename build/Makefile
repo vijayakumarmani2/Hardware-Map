@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/vijay-16033/Documents/Repos_handler/Hardware Map"
+CMAKE_SOURCE_DIR = /home/vijay-16033/Documents/Repos_handler/Hardware_Map
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build"
+CMAKE_BINARY_DIR = /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/vijay-16033/Documents/Repos_handler/Hardware\ Map/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -117,9 +117,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build/CMakeFiles" "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/vijay-16033/Documents/Repos_handler/Hardware Map/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -523,6 +523,30 @@ hardware_map/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/build
 .PHONY : hardware_map/fast
 
+battery/battery.o: battery/battery.cpp.o
+.PHONY : battery/battery.o
+
+# target to build an object file
+battery/battery.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/battery/battery.cpp.o
+.PHONY : battery/battery.cpp.o
+
+battery/battery.i: battery/battery.cpp.i
+.PHONY : battery/battery.i
+
+# target to preprocess a source file
+battery/battery.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/battery/battery.cpp.i
+.PHONY : battery/battery.cpp.i
+
+battery/battery.s: battery/battery.cpp.s
+.PHONY : battery/battery.s
+
+# target to generate assembly for a file
+battery/battery.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/battery/battery.cpp.s
+.PHONY : battery/battery.cpp.s
+
 cpu/cpu.o: cpu/cpu.cpp.o
 .PHONY : cpu/cpu.o
 
@@ -546,6 +570,54 @@ cpu/cpu.s: cpu/cpu.cpp.s
 cpu/cpu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/cpu/cpu.cpp.s
 .PHONY : cpu/cpu.cpp.s
+
+d.o: d.cpp.o
+.PHONY : d.o
+
+# target to build an object file
+d.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/d.cpp.o
+.PHONY : d.cpp.o
+
+d.i: d.cpp.i
+.PHONY : d.i
+
+# target to preprocess a source file
+d.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/d.cpp.i
+.PHONY : d.cpp.i
+
+d.s: d.cpp.s
+.PHONY : d.s
+
+# target to generate assembly for a file
+d.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/d.cpp.s
+.PHONY : d.cpp.s
+
+disk/disk.o: disk/disk.cpp.o
+.PHONY : disk/disk.o
+
+# target to build an object file
+disk/disk.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/disk/disk.cpp.o
+.PHONY : disk/disk.cpp.o
+
+disk/disk.i: disk/disk.cpp.i
+.PHONY : disk/disk.i
+
+# target to preprocess a source file
+disk/disk.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/disk/disk.cpp.i
+.PHONY : disk/disk.cpp.i
+
+disk/disk.s: disk/disk.cpp.s
+.PHONY : disk/disk.s
+
+# target to generate assembly for a file
+disk/disk.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/disk/disk.cpp.s
+.PHONY : disk/disk.cpp.s
 
 display/display.o: display/display.cpp.o
 .PHONY : display/display.o
@@ -643,6 +715,30 @@ ram/ram.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/ram/ram.cpp.s
 .PHONY : ram/ram.cpp.s
 
+wc.o: wc.cpp.o
+.PHONY : wc.o
+
+# target to build an object file
+wc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/wc.cpp.o
+.PHONY : wc.cpp.o
+
+wc.i: wc.cpp.i
+.PHONY : wc.i
+
+# target to preprocess a source file
+wc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/wc.cpp.i
+.PHONY : wc.cpp.i
+
+wc.s: wc.cpp.s
+.PHONY : wc.s
+
+# target to generate assembly for a file
+wc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/wc.cpp.s
+.PHONY : wc.cpp.s
+
 webcam/webcam.o: webcam/webcam.cpp.o
 .PHONY : webcam/webcam.o
 
@@ -707,9 +803,18 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... hardware_map"
+	@echo "... battery/battery.o"
+	@echo "... battery/battery.i"
+	@echo "... battery/battery.s"
 	@echo "... cpu/cpu.o"
 	@echo "... cpu/cpu.i"
 	@echo "... cpu/cpu.s"
+	@echo "... d.o"
+	@echo "... d.i"
+	@echo "... d.s"
+	@echo "... disk/disk.o"
+	@echo "... disk/disk.i"
+	@echo "... disk/disk.s"
 	@echo "... display/display.o"
 	@echo "... display/display.i"
 	@echo "... display/display.s"
@@ -722,6 +827,9 @@ help:
 	@echo "... ram/ram.o"
 	@echo "... ram/ram.i"
 	@echo "... ram/ram.s"
+	@echo "... wc.o"
+	@echo "... wc.i"
+	@echo "... wc.s"
 	@echo "... webcam/webcam.o"
 	@echo "... webcam/webcam.i"
 	@echo "... webcam/webcam.s"
