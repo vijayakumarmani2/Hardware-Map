@@ -22,8 +22,9 @@ Follow these steps to build and install the Hardware Map Tool:
 ### Clone the Repository
 
 
-git clone <repository_url>
-cd hardware-map-tool
+git clone https://github.com/vijayakumarmani2/Hardware-Map.git
+
+cd Hardware-Map
 
 
 ### Build the Application
