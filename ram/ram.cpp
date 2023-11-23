@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include <cstring>
+#include <cstdint>
 
 #define DMI_TABLE_PATH "/sys/firmware/dmi/tables/DMI"
 
