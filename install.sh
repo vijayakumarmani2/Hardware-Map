@@ -16,8 +16,11 @@ SHARE_DIR="$INSTALL_DIR/share"
 GUI_DIR="$SHARE_DIR/hardware_map_gui"
 
 #install cmake make
-apt install cmake make
+sudo apt-get install cmake make
 
+#install neccessory packages
+sudo apt-get install libx11-dev libxrandr-dev libcurl4-openssl-dev libudev-dev libasound2-dev libbluetooth-dev pkg-config
+ 
 # Step 1: Compile and install the command-line tool
 echo "Compiling the command-line tool..."
 mkdir -p build
