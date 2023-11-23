@@ -22,7 +22,7 @@ string readValueFromFile(const string& filename) {
 
 void battery() {
     string batteryPath = "/sys/class/power_supply/BAT0/"; // Change this to match your system's battery path
-
+    string currentMicroamperes="0";
     string statusFile = batteryPath + "status";
     string capacityFile = batteryPath + "capacity";
     string voltageFile = batteryPath + "voltage_now";
@@ -46,12 +46,12 @@ void battery() {
         string filePath = entry.path().string();
 
         if (fileName.find("power_now") != string::npos) {
-            string currentMicroamperes = readValueFromFile(filePath);
+             currentMicroamperes = readValueFromFile(filePath);
         }else if (fileName.find("current_now") != string::npos) {
-            string currentMicroamperes = readValueFromFile(filePath);
+             currentMicroamperes = readValueFromFile(filePath);
         }
     }
-    string currentMicroamperes = readValueFromFile(currentFile);
+   // string currentMicroamperes = readValueFromFile(currentFile);
   //  string health = readValueFromFile(healthFile);
 
     // Convert voltage from microvolts to volts
