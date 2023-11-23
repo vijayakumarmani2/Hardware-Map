@@ -28,8 +28,8 @@ void display() {
 
             if (modeInfo) {
                 std::cout << "Monitor " << i << ": " << outputInfo->name << std::endl;
-                std::cout << "  Resolution: " << modeInfo->width << "x" << modeInfo->height << std::endl;
-                std::cout << "  Refresh Rate: " << modeInfo->dotClock * 1000.0 / (modeInfo->hTotal * modeInfo->vTotal) << " Hz" << std::endl;
+                std::cout << "Resolution: " << modeInfo->width << "x" << modeInfo->height << std::endl;
+                std::cout << "Refresh Rate: " << modeInfo->dotClock * 1000.0 / (modeInfo->hTotal * modeInfo->vTotal) << " Hz" << std::endl;
             }
 
             XRRFreeCrtcInfo(crtcInfo);

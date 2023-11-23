@@ -260,7 +260,7 @@ std::cout << std::endl;
     struct v4l2_fmtdesc fmtdesc;
     fmtdesc.index = 0;
     fmtdesc.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-    std::cout << "\n" << std::endl;
+    //std::cout << "\n" << std::endl;
     while (ioctl(fd, VIDIOC_ENUM_FMT, &fmtdesc) == 0) {
     std::cout << "Supported format: " << fmtdesc.description << std::endl;
     fmtdesc.index++;
@@ -279,9 +279,9 @@ std::cout << std::endl;
     format.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
 
     if (ioctl(fd, VIDIOC_G_FMT, &format) == -1) {
-        std::cerr << "\nError retrieving video format" << std::endl;
+        std::cerr << "Error retrieving video format" << std::endl;
     } else {
-        std::cout << "\nFormat Video Capture:" << std::endl;
+        std::cout << "Format Video Capture:" << std::endl;
         std::cout << "Width/Height: " << format.fmt.pix.width << "/" << format.fmt.pix.height << std::endl;
         std::cout << "Pixel Format: '" << fourccToString(format.fmt.pix.pixelformat) << "'" << std::endl;
         std::cout << "Field: " << format.fmt.pix.field << std::endl;
@@ -299,10 +299,10 @@ memset(&cropcap, 0, sizeof(cropcap));
 cropcap.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
 
 if (ioctl(fd, VIDIOC_CROPCAP, &cropcap) == 0) {
-    printf("\nCrop Capability Video Capture:\n");
-    printf("\tBounds      : Left %d, Top %d, Width %d, Height %d\n", cropcap.bounds.left, cropcap.bounds.top, cropcap.bounds.width, cropcap.bounds.height);
-    printf("\tDefault     : Left %d, Top %d, Width %d, Height %d\n", cropcap.defrect.left, cropcap.defrect.top, cropcap.defrect.width, cropcap.defrect.height);
-    printf("\tPixel Aspect: %d/%d\n", cropcap.pixelaspect.numerator, cropcap.pixelaspect.denominator);
+    printf("Crop Capability Video Capture:\n");
+    printf("Bounds      : Left %d, Top %d, Width %d, Height %d\n", cropcap.bounds.left, cropcap.bounds.top, cropcap.bounds.width, cropcap.bounds.height);
+    printf("Default     : Left %d, Top %d, Width %d, Height %d\n", cropcap.defrect.left, cropcap.defrect.top, cropcap.defrect.width, cropcap.defrect.height);
+    printf("Pixel Aspect: %d/%d\n", cropcap.pixelaspect.numerator, cropcap.pixelaspect.denominator);
 }
 
 memset(&selection, 0, sizeof(selection));
@@ -324,9 +324,9 @@ streamparm.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
 
 if (ioctl(fd, VIDIOC_G_PARM, &streamparm) == 0) {
     printf("Streaming Parameters Video Capture:\n");
-    printf("\tCapabilities     : timeperframe\n");
-    printf("\tFrames per second: %.3f (%d/%d)\n", (double)streamparm.parm.capture.timeperframe.denominator / (double)streamparm.parm.capture.timeperframe.numerator, streamparm.parm.capture.timeperframe.denominator, streamparm.parm.capture.timeperframe.numerator);
-    printf("\tRead buffers     : %d\n", streamparm.parm.capture.readbuffers);
+    printf("Capabilities     : timeperframe\n");
+    printf("Frames per second: %.3f (%d/%d)\n", (double)streamparm.parm.capture.timeperframe.denominator / (double)streamparm.parm.capture.timeperframe.numerator, streamparm.parm.capture.timeperframe.denominator, streamparm.parm.capture.timeperframe.numerator);
+    printf("Read buffers     : %d\n", streamparm.parm.capture.readbuffers);
 }
 
 
@@ -334,7 +334,7 @@ struct v4l2_querymenu querymenu;
 
 memset(&queryctrl, 0, sizeof(queryctrl));
 
-printf("\nUser Controls\n");
+printf("User Controls:\n");
 
 for (queryctrl.id = V4L2_CID_BASE;
      queryctrl.id < V4L2_CID_LASTP1;
@@ -358,7 +358,7 @@ for (queryctrl.id = V4L2_CID_BASE;
                  querymenu.index <= queryctrl.maximum;
                  querymenu.index++) {
                 if (ioctl(fd, VIDIOC_QUERYMENU, &querymenu) == 0) {
-                    printf("\t\t\t%d: %s\n", querymenu.index, querymenu.name);
+                    printf("%d: %s\n", querymenu.index, querymenu.name);
                 }
             }
         }
@@ -366,7 +366,7 @@ for (queryctrl.id = V4L2_CID_BASE;
 }
 
 // For extended controls: V4L2_CID_CAMERA_CLASS_BASE, V4L2_CID_CAMERA_CLASS, etc.
-printf("\nCamera Controls\n");
+printf("Camera Controls\n");
 
 for (queryctrl.id = V4L2_CID_CAMERA_CLASS_BASE;
      queryctrl.id < V4L2_CID_CAMERA_CLASS; 

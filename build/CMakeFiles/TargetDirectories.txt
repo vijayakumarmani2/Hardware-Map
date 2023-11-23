@@ -32,3 +32,7 @@
 /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles/test.dir
 /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles/edit_cache.dir
 /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles/rebuild_cache.dir
+/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles/list_install_components.dir
+/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles/install.dir
+/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles/install/local.dir
+/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles/install/strip.dir

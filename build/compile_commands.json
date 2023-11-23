@@ -48,5 +48,55 @@
   "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
   "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/d.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/d.cpp",
   "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/d.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/wireless/wifi.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/wireless/wifi.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/wireless/wifi.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/ethernet/ethernet.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/ethernet/ethernet.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/bluetooth/bluetooth.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/bluetooth/bluetooth.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/keyboard/keyboard.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/keyboard/keyboard.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/mouse/mouse.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/mouse/mouse.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/mouse/mouse.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/touchpad/touchpad.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/touchpad/touchpad.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/audio/audio.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/audio/audio.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/audio/audio.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/mic/mic.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/mic/mic.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/mic/mic.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/gpu/gpu.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/gpu/gpu.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/gpu/gpu.cpp"
+},
+{
+  "directory": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/sys_info/sys_info.cpp",
+  "file": "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/sys_info/sys_info.cpp"
 }
 ]

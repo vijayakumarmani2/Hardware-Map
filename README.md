@@ -1,6 +1,6 @@
 # Hardware-Map
 
-The Hardware Map Tool is a command-line application that provides comprehensive information about your system's hardware specifications. You can use this tool to retrieve information about the CPU, webcam, memory, RAM, display, battery, and disk.
+The Hardware Map Tool is a command-line application that provides comprehensive information about your system's hardware specifications. You can use this tool to retrieve information about the CPU, webcam, memory, RAM, display, battery, disk, wifi, ethernet, bluetooth, keyboard, touchpad and audio.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -23,7 +23,6 @@ Follow these steps to build and install the Hardware Map Tool:
 
 
 git clone https://github.com/vijayakumarmani2/Hardware-Map.git
-
 cd Hardware-Map
 
 
@@ -92,6 +91,48 @@ Once you have installed the Hardware Map Tool (or if you prefer to run it from t
 
    
    hardware_map disk
+
+
+- **Disk Information:**
+
+   
+   hardware_map disk
+
+
+- **Wifi Information:**
+
+   
+   hardware_map wifi
+
+
+- **Ethernet Information:**
+
+   
+   hardware_map ethernet
+
+
+- **Bluetooth Information:**
+
+   
+   hardware_map bluetooth
+
+
+- **Keyboard Information:**
+
+   
+   hardware_map keyboard
+
+
+- **Touchpad Information:**
+
+   
+   hardware_map touchpad
+
+
+- **Audio Information:**
+
+   
+   hardware_map audio
    
 
 - **All Hardware Information:**

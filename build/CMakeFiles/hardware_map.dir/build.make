@@ -209,6 +209,146 @@ CMakeFiles/hardware_map.dir/d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/d.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/d.cpp -o CMakeFiles/hardware_map.dir/d.cpp.s
 
+CMakeFiles/hardware_map.dir/wireless/wifi.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/wireless/wifi.cpp.o: ../wireless/wifi.cpp
+CMakeFiles/hardware_map.dir/wireless/wifi.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/hardware_map.dir/wireless/wifi.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/wireless/wifi.cpp.o -MF CMakeFiles/hardware_map.dir/wireless/wifi.cpp.o.d -o CMakeFiles/hardware_map.dir/wireless/wifi.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/wireless/wifi.cpp
+
+CMakeFiles/hardware_map.dir/wireless/wifi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/wireless/wifi.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/wireless/wifi.cpp > CMakeFiles/hardware_map.dir/wireless/wifi.cpp.i
+
+CMakeFiles/hardware_map.dir/wireless/wifi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/wireless/wifi.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/wireless/wifi.cpp -o CMakeFiles/hardware_map.dir/wireless/wifi.cpp.s
+
+CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.o: ../ethernet/ethernet.cpp
+CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.o -MF CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.o.d -o CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/ethernet/ethernet.cpp
+
+CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/ethernet/ethernet.cpp > CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.i
+
+CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/ethernet/ethernet.cpp -o CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.s
+
+CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.o: ../bluetooth/bluetooth.cpp
+CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.o -MF CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.o.d -o CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/bluetooth/bluetooth.cpp
+
+CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/bluetooth/bluetooth.cpp > CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.i
+
+CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/bluetooth/bluetooth.cpp -o CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.s
+
+CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.o: ../keyboard/keyboard.cpp
+CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.o -MF CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.o.d -o CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/keyboard/keyboard.cpp
+
+CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/keyboard/keyboard.cpp > CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.i
+
+CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/keyboard/keyboard.cpp -o CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.s
+
+CMakeFiles/hardware_map.dir/mouse/mouse.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/mouse/mouse.cpp.o: ../mouse/mouse.cpp
+CMakeFiles/hardware_map.dir/mouse/mouse.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/hardware_map.dir/mouse/mouse.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/mouse/mouse.cpp.o -MF CMakeFiles/hardware_map.dir/mouse/mouse.cpp.o.d -o CMakeFiles/hardware_map.dir/mouse/mouse.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/mouse/mouse.cpp
+
+CMakeFiles/hardware_map.dir/mouse/mouse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/mouse/mouse.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/mouse/mouse.cpp > CMakeFiles/hardware_map.dir/mouse/mouse.cpp.i
+
+CMakeFiles/hardware_map.dir/mouse/mouse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/mouse/mouse.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/mouse/mouse.cpp -o CMakeFiles/hardware_map.dir/mouse/mouse.cpp.s
+
+CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.o: ../touchpad/touchpad.cpp
+CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.o -MF CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.o.d -o CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/touchpad/touchpad.cpp
+
+CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/touchpad/touchpad.cpp > CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.i
+
+CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/touchpad/touchpad.cpp -o CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.s
+
+CMakeFiles/hardware_map.dir/audio/audio.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/audio/audio.cpp.o: ../audio/audio.cpp
+CMakeFiles/hardware_map.dir/audio/audio.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/hardware_map.dir/audio/audio.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/audio/audio.cpp.o -MF CMakeFiles/hardware_map.dir/audio/audio.cpp.o.d -o CMakeFiles/hardware_map.dir/audio/audio.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/audio/audio.cpp
+
+CMakeFiles/hardware_map.dir/audio/audio.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/audio/audio.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/audio/audio.cpp > CMakeFiles/hardware_map.dir/audio/audio.cpp.i
+
+CMakeFiles/hardware_map.dir/audio/audio.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/audio/audio.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/audio/audio.cpp -o CMakeFiles/hardware_map.dir/audio/audio.cpp.s
+
+CMakeFiles/hardware_map.dir/mic/mic.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/mic/mic.cpp.o: ../mic/mic.cpp
+CMakeFiles/hardware_map.dir/mic/mic.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/hardware_map.dir/mic/mic.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/mic/mic.cpp.o -MF CMakeFiles/hardware_map.dir/mic/mic.cpp.o.d -o CMakeFiles/hardware_map.dir/mic/mic.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/mic/mic.cpp
+
+CMakeFiles/hardware_map.dir/mic/mic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/mic/mic.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/mic/mic.cpp > CMakeFiles/hardware_map.dir/mic/mic.cpp.i
+
+CMakeFiles/hardware_map.dir/mic/mic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/mic/mic.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/mic/mic.cpp -o CMakeFiles/hardware_map.dir/mic/mic.cpp.s
+
+CMakeFiles/hardware_map.dir/gpu/gpu.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/gpu/gpu.cpp.o: ../gpu/gpu.cpp
+CMakeFiles/hardware_map.dir/gpu/gpu.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/hardware_map.dir/gpu/gpu.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/gpu/gpu.cpp.o -MF CMakeFiles/hardware_map.dir/gpu/gpu.cpp.o.d -o CMakeFiles/hardware_map.dir/gpu/gpu.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/gpu/gpu.cpp
+
+CMakeFiles/hardware_map.dir/gpu/gpu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/gpu/gpu.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/gpu/gpu.cpp > CMakeFiles/hardware_map.dir/gpu/gpu.cpp.i
+
+CMakeFiles/hardware_map.dir/gpu/gpu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/gpu/gpu.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/gpu/gpu.cpp -o CMakeFiles/hardware_map.dir/gpu/gpu.cpp.s
+
+CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.o: CMakeFiles/hardware_map.dir/flags.make
+CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.o: ../sys_info/sys_info.cpp
+CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.o: CMakeFiles/hardware_map.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.o -MF CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.o.d -o CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.o -c /home/vijay-16033/Documents/Repos_handler/Hardware_Map/sys_info/sys_info.cpp
+
+CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vijay-16033/Documents/Repos_handler/Hardware_Map/sys_info/sys_info.cpp > CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.i
+
+CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vijay-16033/Documents/Repos_handler/Hardware_Map/sys_info/sys_info.cpp -o CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.s
+
 # Object files for target hardware_map
 hardware_map_OBJECTS = \
 "CMakeFiles/hardware_map.dir/main.cpp.o" \
@@ -220,7 +360,17 @@ hardware_map_OBJECTS = \
 "CMakeFiles/hardware_map.dir/wc.cpp.o" \
 "CMakeFiles/hardware_map.dir/disk/disk.cpp.o" \
 "CMakeFiles/hardware_map.dir/battery/battery.cpp.o" \
-"CMakeFiles/hardware_map.dir/d.cpp.o"
+"CMakeFiles/hardware_map.dir/d.cpp.o" \
+"CMakeFiles/hardware_map.dir/wireless/wifi.cpp.o" \
+"CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.o" \
+"CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.o" \
+"CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.o" \
+"CMakeFiles/hardware_map.dir/mouse/mouse.cpp.o" \
+"CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.o" \
+"CMakeFiles/hardware_map.dir/audio/audio.cpp.o" \
+"CMakeFiles/hardware_map.dir/mic/mic.cpp.o" \
+"CMakeFiles/hardware_map.dir/gpu/gpu.cpp.o" \
+"CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.o"
 
 # External object files for target hardware_map
 hardware_map_EXTERNAL_OBJECTS =
@@ -235,6 +385,16 @@ hardware_map: CMakeFiles/hardware_map.dir/wc.cpp.o
 hardware_map: CMakeFiles/hardware_map.dir/disk/disk.cpp.o
 hardware_map: CMakeFiles/hardware_map.dir/battery/battery.cpp.o
 hardware_map: CMakeFiles/hardware_map.dir/d.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/wireless/wifi.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/mouse/mouse.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/audio/audio.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/mic/mic.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/gpu/gpu.cpp.o
+hardware_map: CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.o
 hardware_map: CMakeFiles/hardware_map.dir/build.make
 hardware_map: /usr/lib/x86_64-linux-gnu/libX11.so
 hardware_map: /usr/lib/x86_64-linux-gnu/libXext.so
@@ -242,8 +402,10 @@ hardware_map: /usr/lib/x86_64-linux-gnu/libXrandr.so
 hardware_map: /usr/lib/x86_64-linux-gnu/libX11.so
 hardware_map: /usr/lib/x86_64-linux-gnu/libXext.so
 hardware_map: /usr/lib/x86_64-linux-gnu/libXrandr.so
+hardware_map: /usr/lib/x86_64-linux-gnu/libcurl.so
+hardware_map: /usr/lib/x86_64-linux-gnu/libasound.so
 hardware_map: CMakeFiles/hardware_map.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable hardware_map"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable hardware_map"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hardware_map.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

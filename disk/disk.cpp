@@ -42,7 +42,7 @@ void getDiskInfo(const std::string &diskName) {
         std::cout << "Model: " << model << std::endl;
         std::cout << "Serial Number: " << serial << std::endl;
         std::cout << "Size (bytes): " << size * 512 << std::endl; // Size is in 512-byte sectors
-        std::cout << "-----------------------------" << std::endl;
+        std::cout << "\n" << std::endl;
     }
 }
 

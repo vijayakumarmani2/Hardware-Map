@@ -115,6 +115,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build/CMakeFiles /home/vijay-16033/Documents/Repos_handler/Hardware_Map/build//CMakeFiles/progress.marks
@@ -523,6 +568,30 @@ hardware_map/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/build
 .PHONY : hardware_map/fast
 
+audio/audio.o: audio/audio.cpp.o
+.PHONY : audio/audio.o
+
+# target to build an object file
+audio/audio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/audio/audio.cpp.o
+.PHONY : audio/audio.cpp.o
+
+audio/audio.i: audio/audio.cpp.i
+.PHONY : audio/audio.i
+
+# target to preprocess a source file
+audio/audio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/audio/audio.cpp.i
+.PHONY : audio/audio.cpp.i
+
+audio/audio.s: audio/audio.cpp.s
+.PHONY : audio/audio.s
+
+# target to generate assembly for a file
+audio/audio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/audio/audio.cpp.s
+.PHONY : audio/audio.cpp.s
+
 battery/battery.o: battery/battery.cpp.o
 .PHONY : battery/battery.o
 
@@ -546,6 +615,30 @@ battery/battery.s: battery/battery.cpp.s
 battery/battery.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/battery/battery.cpp.s
 .PHONY : battery/battery.cpp.s
+
+bluetooth/bluetooth.o: bluetooth/bluetooth.cpp.o
+.PHONY : bluetooth/bluetooth.o
+
+# target to build an object file
+bluetooth/bluetooth.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.o
+.PHONY : bluetooth/bluetooth.cpp.o
+
+bluetooth/bluetooth.i: bluetooth/bluetooth.cpp.i
+.PHONY : bluetooth/bluetooth.i
+
+# target to preprocess a source file
+bluetooth/bluetooth.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.i
+.PHONY : bluetooth/bluetooth.cpp.i
+
+bluetooth/bluetooth.s: bluetooth/bluetooth.cpp.s
+.PHONY : bluetooth/bluetooth.s
+
+# target to generate assembly for a file
+bluetooth/bluetooth.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/bluetooth/bluetooth.cpp.s
+.PHONY : bluetooth/bluetooth.cpp.s
 
 cpu/cpu.o: cpu/cpu.cpp.o
 .PHONY : cpu/cpu.o
@@ -643,6 +736,78 @@ display/display.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/display/display.cpp.s
 .PHONY : display/display.cpp.s
 
+ethernet/ethernet.o: ethernet/ethernet.cpp.o
+.PHONY : ethernet/ethernet.o
+
+# target to build an object file
+ethernet/ethernet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.o
+.PHONY : ethernet/ethernet.cpp.o
+
+ethernet/ethernet.i: ethernet/ethernet.cpp.i
+.PHONY : ethernet/ethernet.i
+
+# target to preprocess a source file
+ethernet/ethernet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.i
+.PHONY : ethernet/ethernet.cpp.i
+
+ethernet/ethernet.s: ethernet/ethernet.cpp.s
+.PHONY : ethernet/ethernet.s
+
+# target to generate assembly for a file
+ethernet/ethernet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/ethernet/ethernet.cpp.s
+.PHONY : ethernet/ethernet.cpp.s
+
+gpu/gpu.o: gpu/gpu.cpp.o
+.PHONY : gpu/gpu.o
+
+# target to build an object file
+gpu/gpu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/gpu/gpu.cpp.o
+.PHONY : gpu/gpu.cpp.o
+
+gpu/gpu.i: gpu/gpu.cpp.i
+.PHONY : gpu/gpu.i
+
+# target to preprocess a source file
+gpu/gpu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/gpu/gpu.cpp.i
+.PHONY : gpu/gpu.cpp.i
+
+gpu/gpu.s: gpu/gpu.cpp.s
+.PHONY : gpu/gpu.s
+
+# target to generate assembly for a file
+gpu/gpu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/gpu/gpu.cpp.s
+.PHONY : gpu/gpu.cpp.s
+
+keyboard/keyboard.o: keyboard/keyboard.cpp.o
+.PHONY : keyboard/keyboard.o
+
+# target to build an object file
+keyboard/keyboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.o
+.PHONY : keyboard/keyboard.cpp.o
+
+keyboard/keyboard.i: keyboard/keyboard.cpp.i
+.PHONY : keyboard/keyboard.i
+
+# target to preprocess a source file
+keyboard/keyboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.i
+.PHONY : keyboard/keyboard.cpp.i
+
+keyboard/keyboard.s: keyboard/keyboard.cpp.s
+.PHONY : keyboard/keyboard.s
+
+# target to generate assembly for a file
+keyboard/keyboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/keyboard/keyboard.cpp.s
+.PHONY : keyboard/keyboard.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -691,6 +856,54 @@ memory/memory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/memory/memory.cpp.s
 .PHONY : memory/memory.cpp.s
 
+mic/mic.o: mic/mic.cpp.o
+.PHONY : mic/mic.o
+
+# target to build an object file
+mic/mic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/mic/mic.cpp.o
+.PHONY : mic/mic.cpp.o
+
+mic/mic.i: mic/mic.cpp.i
+.PHONY : mic/mic.i
+
+# target to preprocess a source file
+mic/mic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/mic/mic.cpp.i
+.PHONY : mic/mic.cpp.i
+
+mic/mic.s: mic/mic.cpp.s
+.PHONY : mic/mic.s
+
+# target to generate assembly for a file
+mic/mic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/mic/mic.cpp.s
+.PHONY : mic/mic.cpp.s
+
+mouse/mouse.o: mouse/mouse.cpp.o
+.PHONY : mouse/mouse.o
+
+# target to build an object file
+mouse/mouse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/mouse/mouse.cpp.o
+.PHONY : mouse/mouse.cpp.o
+
+mouse/mouse.i: mouse/mouse.cpp.i
+.PHONY : mouse/mouse.i
+
+# target to preprocess a source file
+mouse/mouse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/mouse/mouse.cpp.i
+.PHONY : mouse/mouse.cpp.i
+
+mouse/mouse.s: mouse/mouse.cpp.s
+.PHONY : mouse/mouse.s
+
+# target to generate assembly for a file
+mouse/mouse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/mouse/mouse.cpp.s
+.PHONY : mouse/mouse.cpp.s
+
 ram/ram.o: ram/ram.cpp.o
 .PHONY : ram/ram.o
 
@@ -714,6 +927,54 @@ ram/ram.s: ram/ram.cpp.s
 ram/ram.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/ram/ram.cpp.s
 .PHONY : ram/ram.cpp.s
+
+sys_info/sys_info.o: sys_info/sys_info.cpp.o
+.PHONY : sys_info/sys_info.o
+
+# target to build an object file
+sys_info/sys_info.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.o
+.PHONY : sys_info/sys_info.cpp.o
+
+sys_info/sys_info.i: sys_info/sys_info.cpp.i
+.PHONY : sys_info/sys_info.i
+
+# target to preprocess a source file
+sys_info/sys_info.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.i
+.PHONY : sys_info/sys_info.cpp.i
+
+sys_info/sys_info.s: sys_info/sys_info.cpp.s
+.PHONY : sys_info/sys_info.s
+
+# target to generate assembly for a file
+sys_info/sys_info.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/sys_info/sys_info.cpp.s
+.PHONY : sys_info/sys_info.cpp.s
+
+touchpad/touchpad.o: touchpad/touchpad.cpp.o
+.PHONY : touchpad/touchpad.o
+
+# target to build an object file
+touchpad/touchpad.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.o
+.PHONY : touchpad/touchpad.cpp.o
+
+touchpad/touchpad.i: touchpad/touchpad.cpp.i
+.PHONY : touchpad/touchpad.i
+
+# target to preprocess a source file
+touchpad/touchpad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.i
+.PHONY : touchpad/touchpad.cpp.i
+
+touchpad/touchpad.s: touchpad/touchpad.cpp.s
+.PHONY : touchpad/touchpad.s
+
+# target to generate assembly for a file
+touchpad/touchpad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/touchpad/touchpad.cpp.s
+.PHONY : touchpad/touchpad.cpp.s
 
 wc.o: wc.cpp.o
 .PHONY : wc.o
@@ -763,6 +1024,30 @@ webcam/webcam.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/webcam/webcam.cpp.s
 .PHONY : webcam/webcam.cpp.s
 
+wireless/wifi.o: wireless/wifi.cpp.o
+.PHONY : wireless/wifi.o
+
+# target to build an object file
+wireless/wifi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/wireless/wifi.cpp.o
+.PHONY : wireless/wifi.cpp.o
+
+wireless/wifi.i: wireless/wifi.cpp.i
+.PHONY : wireless/wifi.i
+
+# target to preprocess a source file
+wireless/wifi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/wireless/wifi.cpp.i
+.PHONY : wireless/wifi.cpp.i
+
+wireless/wifi.s: wireless/wifi.cpp.s
+.PHONY : wireless/wifi.s
+
+# target to generate assembly for a file
+wireless/wifi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hardware_map.dir/build.make CMakeFiles/hardware_map.dir/wireless/wifi.cpp.s
+.PHONY : wireless/wifi.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -770,6 +1055,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
@@ -803,9 +1092,15 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... hardware_map"
+	@echo "... audio/audio.o"
+	@echo "... audio/audio.i"
+	@echo "... audio/audio.s"
 	@echo "... battery/battery.o"
 	@echo "... battery/battery.i"
 	@echo "... battery/battery.s"
+	@echo "... bluetooth/bluetooth.o"
+	@echo "... bluetooth/bluetooth.i"
+	@echo "... bluetooth/bluetooth.s"
 	@echo "... cpu/cpu.o"
 	@echo "... cpu/cpu.i"
 	@echo "... cpu/cpu.s"
@@ -818,21 +1113,45 @@ help:
 	@echo "... display/display.o"
 	@echo "... display/display.i"
 	@echo "... display/display.s"
+	@echo "... ethernet/ethernet.o"
+	@echo "... ethernet/ethernet.i"
+	@echo "... ethernet/ethernet.s"
+	@echo "... gpu/gpu.o"
+	@echo "... gpu/gpu.i"
+	@echo "... gpu/gpu.s"
+	@echo "... keyboard/keyboard.o"
+	@echo "... keyboard/keyboard.i"
+	@echo "... keyboard/keyboard.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... memory/memory.o"
 	@echo "... memory/memory.i"
 	@echo "... memory/memory.s"
+	@echo "... mic/mic.o"
+	@echo "... mic/mic.i"
+	@echo "... mic/mic.s"
+	@echo "... mouse/mouse.o"
+	@echo "... mouse/mouse.i"
+	@echo "... mouse/mouse.s"
 	@echo "... ram/ram.o"
 	@echo "... ram/ram.i"
 	@echo "... ram/ram.s"
+	@echo "... sys_info/sys_info.o"
+	@echo "... sys_info/sys_info.i"
+	@echo "... sys_info/sys_info.s"
+	@echo "... touchpad/touchpad.o"
+	@echo "... touchpad/touchpad.i"
+	@echo "... touchpad/touchpad.s"
 	@echo "... wc.o"
 	@echo "... wc.i"
 	@echo "... wc.s"
 	@echo "... webcam/webcam.o"
 	@echo "... webcam/webcam.i"
 	@echo "... webcam/webcam.s"
+	@echo "... wireless/wifi.o"
+	@echo "... wireless/wifi.i"
+	@echo "... wireless/wifi.s"
 .PHONY : help
 
 

@@ -42,14 +42,14 @@ void print_physical_memory_array(const uint8_t *data, const dmi_header *hdr) {
     uint16_t num_devices = *(uint16_t *)(data + 0x0D);
 
    // printf("--------RAM memeory info---------\n");
-    printf("Handle 0x%04X, DMI type 16, %d bytes\n", handle, hdr->length);
-    printf("Physical Memory Array\n");
-    printf("\tLocation: %s\n", location == 0x03 ? "System Board Or Motherboard" : "Other");
-    printf("\tUse: %s\n", use == 0x03 ? "System Memory" : "Other");
-    printf("\tError Correction Type: %s\n", error_correction == 0x00 ? "None" : "Other");
-    printf("\tMaximum Capacity: %d GB\n", max_capacity / (1024 * 1024));
-    printf("\tError Information Handle: Not Provided\n"); // Simplified for brevity
-    printf("\tNumber Of Devices: %d\n\n", num_devices);
+   // printf("Handle 0x%04X, DMI type 16, %d bytes\n", handle, hdr->length);
+    printf("Memory: Physical Memory Array\n");
+    printf("Location: %s\n", location == 0x03 ? "System Board Or Motherboard" : "Other");
+    printf("Use: %s\n", use == 0x03 ? "System Memory" : "Other");
+    printf("Error Correction Type: %s\n", error_correction == 0x00 ? "None" : "Other");
+    printf("Maximum Capacity: %d GB\n", max_capacity / (1024 * 1024));
+    printf("Error Information Handle: Not Provided\n"); // Simplified for brevity
+    printf("Number Of Devices: %d\n", num_devices);
 }
 
 void print_memory_array_mapped_address(const uint8_t *data, const dmi_header *hdr) {
@@ -59,13 +59,13 @@ void print_memory_array_mapped_address(const uint8_t *data, const dmi_header *hd
     uint16_t array_handle = *(uint16_t *)(data + 0x0C);
     uint8_t partition_width = *(data + 0x0E);
 
-    printf("Handle 0x%04X, DMI type 19, %d bytes\n", handle, hdr->length);
-    printf("Memory Array Mapped Address\n");
-    printf("\tStarting Address: 0x%012lX\n", starting_address);
-    printf("\tEnding Address: 0x%012lX\n", ending_address);
-    printf("\tRange Size: %d GB\n", (int)((ending_address - starting_address + 1) / (1024 * 1024)));
-    printf("\tPhysical Array Handle: 0x%04X\n", array_handle);
-    printf("\tPartition Width: %d\n\n", partition_width);
+   // printf("Handle 0x%04X, DMI type 19, %d bytes\n", handle, hdr->length);
+    printf("Memory: Memory Array Mapped Address\n");
+    printf("Starting Address: 0x%012lX\n", starting_address);
+    printf("Ending Address: 0x%012lX\n", ending_address);
+    printf("Range Size: %d GB\n", (int)((ending_address - starting_address + 1) / (1024 * 1024)));
+    printf("Physical Array Handle: 0x%04X\n", array_handle);
+    printf("Partition Width: %d\n", partition_width);
 }
 
 void print_memory_info(const uint8_t *data, const dmi_header *hdr) {
