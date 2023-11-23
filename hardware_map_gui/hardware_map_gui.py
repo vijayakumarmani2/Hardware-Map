@@ -9,10 +9,8 @@ from docx import Document
 from docx.shared import Inches
 from docx.shared import Pt
 from docx.shared import RGBColor
-import difflib
-import ezodf
 from openpyxl import Workbook
-from openpyxl.styles import Font, PatternFill
+from openpyxl.styles import Font, PatternFillcd 
 
 class CustomTitleBar(QWidget):
     def __init__(self, parent=None):
@@ -212,14 +210,14 @@ class HardwareMapWindow(QMainWindow):
         memoryGroup.setStyleSheet(common_stylesheet_QGroupBox)
         memoryLayout = centeredLayout()
         self.ramButton = QPushButton('RAM', self)
-        self.romButton = QPushButton('ROM', self)
+        #self.romButton = QPushButton('ROM', self)
         memoryLayout.addWidget(self.ramButton)
-        memoryLayout.addWidget(self.romButton)
+        #memoryLayout.addWidget(self.romButton)
         memoryGroup.setLayout(memoryLayout)
         styleButton(self.ramButton, 'Memory')
-        styleButton(self.romButton, 'Memory')
+        #styleButton(self.romButton, 'Memory')
         self.ramButton.clicked.connect(self.showRAMInfo)
-        self.romButton.clicked.connect(self.showRAMInfo)
+        #self.romButton.clicked.connect(self.showRAMInfo)
         layout.addWidget(memoryGroup, 0, 0)
 
         # Adding another group as an example:
@@ -359,10 +357,6 @@ class HardwareMapWindow(QMainWindow):
     def showRAMInfo(self):
         ram_info = self.extract_info("RAM Details")
         self.showTableDialog("RAM Information", ram_info)
-        
-    def showRAMInfo(self):
-        ram_info = self.extract_info("RAM Details")
-        self.showTableDialog("RAM Information", ram_info)   
 
     def showWiFiInfo(self):
         wifi_info = self.extract_info("Wifi Details")
