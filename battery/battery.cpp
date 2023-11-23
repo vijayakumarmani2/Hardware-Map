@@ -9,7 +9,7 @@ using namespace std;
 string readValueFromFile(const string& filename) {
     ifstream file(filename);
     if (!file) {
-        cerr << "Failed to open file: " << filename << endl;
+        cerr << "Failed to open file- " << filename << endl;
        // exit(1);
     }
     string value;
@@ -32,10 +32,23 @@ void battery() {
     string status = readValueFromFile(statusFile);
     string capacity = readValueFromFile(capacityFile);
     string voltageMicrovolts = readValueFromFile(voltageFile);
-    string currentMicroamperes = readValueFromFile(currentFile);
+
     string manufacturer = readValueFromFile(manufacturerFile);
     string modelName = readValueFromFile(modelNameFile);
     string technology = readValueFromFile(technologyFile);
+
+    // Dynamically discover files in the battery directory
+    for (const auto& entry : fs::directory_iterator(batteryPath)) {
+        string fileName = entry.path().filename().string();
+        string filePath = entry.path().string();
+
+        if (fileName.find(currentFile) != string::npos) {
+            string currentMicroamperes = readValueFromFile(filePath);
+        }else if (fileName.find("power_now") != string::npos) {
+            string currentMicroamperes = readValueFromFile(filePath);
+        }
+    }
+    string currentMicroamperes = readValueFromFile(currentFile);
   //  string health = readValueFromFile(healthFile);
 
     // Convert voltage from microvolts to volts
