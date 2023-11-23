@@ -13,6 +13,7 @@ import difflib
 import ezodf
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill
+
 class CustomTitleBar(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)

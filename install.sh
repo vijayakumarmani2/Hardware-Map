@@ -19,7 +19,10 @@ GUI_DIR="$SHARE_DIR/hardware_map_gui"
 sudo apt-get install cmake make
 
 #install neccessory packages...
-sudo apt-get install libx11-dev libxrandr-dev libcurl4-openssl-dev libudev-dev libasound2-dev libbluetooth-dev pkg-config
+sudo apt-get install libx11-dev libxrandr-dev libcurl4-openssl-dev libudev-dev libasound2-dev libbluetooth-dev pkg-config libxcb-xinerama0
+
+# set the QT_QPA_PLATFORM environment variable to "xcb"
+export QT_QPA_PLATFORM=xcb
  
 # Step 1: Compile and install the command-line tool
 echo "Compiling the command-line tool..."
@@ -54,7 +57,7 @@ WRAPPER_SCRIPT="$BIN_DIR/hardware_map_gui"
 cat > "$WRAPPER_SCRIPT" <<EOF
 #!/bin/bash
 source "$VENV_DIR/bin/activate"
-python "$GUI_DIR/hardware_map_gui.py" "\$@"
+"$VENV_DIR/bin/python3" "$GUI_DIR/hardware_map_gui.py" "\$@"
 deactivate
 EOF
 chmod +x "$WRAPPER_SCRIPT"
