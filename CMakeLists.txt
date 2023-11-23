@@ -15,6 +15,9 @@ else()
     message(FATAL_ERROR "X11/Xrandr not found!")
 endif()
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 # Find and include libcurl
 find_package(CURL REQUIRED)
 include_directories(${CURL_INCLUDE_DIRS})

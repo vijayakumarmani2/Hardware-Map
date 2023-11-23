@@ -13,6 +13,7 @@
 #include <libudev.h>
 #include <unistd.h>
 #include <set>
+#include <cstdint>
 
 
 

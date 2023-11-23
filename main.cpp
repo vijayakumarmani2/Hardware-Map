@@ -94,7 +94,6 @@ int main(int argc, char* argv[]) {
         audio();
         std::cout << "\n\n-------GPU Details\n" << std::endl;
         gpu();
-        std::cout << "\n\nEnd\n" << std::endl;
     } else {
         std::cout << "Unknown command!" << std::endl;
     }
