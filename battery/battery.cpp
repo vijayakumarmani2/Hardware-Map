@@ -3,6 +3,8 @@
 #include <string>
 #include <iomanip> 
 #include <filesystem>
+#include <cstdlib> 
+
 namespace fs = std::filesystem;
 
 using namespace std;
@@ -43,9 +45,9 @@ void battery() {
         string fileName = entry.path().filename().string();
         string filePath = entry.path().string();
 
-        if (fileName.find(currentFile) != string::npos) {
+        if (fileName.find("power_now") != string::npos) {
             string currentMicroamperes = readValueFromFile(filePath);
-        }else if (fileName.find("power_now") != string::npos) {
+        }else if (fileName.find("current_now") != string::npos) {
             string currentMicroamperes = readValueFromFile(filePath);
         }
     }
