@@ -43,7 +43,8 @@ python3 -m venv "$VENV_DIR"
 source "$VENV_DIR/bin/activate"
 
 # Install Python dependencies
-pip install ezodf==0.3.2 openpyxl==3.1.2 PyQt5==5.15.10 PyQt5_sip==12.13.0 python_docx==1.0.1 PyQt5
+sudo apt install python3-pip
+pip install ezodf==0.3.2 openpyxl==3.1.2 PyQt5==5.15.10 PyQt5_sip==12.13.0 python_docx==1.0.1 
 
 # Deactivate the virtual environment
 deactivate
