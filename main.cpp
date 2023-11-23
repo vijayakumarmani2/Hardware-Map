@@ -75,7 +75,7 @@ int main(int argc, char* argv[]) {
         std::cout << "\n\n-------Display Details\n" << std::endl;
         display();
         std::cout << "\n\n-------Battery Details\n" << std::endl;
-        battery();
+       // battery();
         std::cout << "\n\n-------Disk Details\n" << std::endl;
         disk();
         std::cout << "\n\n-------Wifi Details\n" << std::endl;
