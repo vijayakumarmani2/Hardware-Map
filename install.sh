@@ -37,6 +37,7 @@ mkdir -p "$GUI_DIR"
 cp -r hardware_map_gui/* "$GUI_DIR"
 
 # Create a virtual environment for the application's Python dependencies
+apt install python3-venv
 VENV_DIR="$GUI_DIR/venv"
 python3 -m venv "$VENV_DIR"
 source "$VENV_DIR/bin/activate"
