@@ -2,9 +2,10 @@
 #include <fstream>
 #include <string>
 #include <iomanip> 
+#include <filesystem>
+namespace fs = std::filesystem;
 
 using namespace std;
-
 // Function to read a value from a file
 string readValueFromFile(const string& filename) {
     ifstream file(filename);

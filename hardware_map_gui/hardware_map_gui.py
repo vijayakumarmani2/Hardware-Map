@@ -315,7 +315,7 @@ class HardwareMapWindow(QMainWindow):
     
     def get_hardware_info(self):
         # Execute the command and get the output
-        command = ["sudo","hardware_map", "all"]
+        command = ["hardware_map", "all"]
         result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
         # Check for errors
