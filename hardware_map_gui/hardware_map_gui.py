@@ -10,7 +10,7 @@ from docx.shared import Inches
 from docx.shared import Pt
 from docx.shared import RGBColor
 from openpyxl import Workbook
-from openpyxl.styles import Font, PatternFillcd 
+from openpyxl.styles import Font, PatternFill
 
 class CustomTitleBar(QWidget):
     def __init__(self, parent=None):
@@ -315,7 +315,7 @@ class HardwareMapWindow(QMainWindow):
     
     def get_hardware_info(self):
         # Execute the command and get the output
-        command = ["hardware_map", "all"]
+        command = ["sudo","hardware_map", "all"]
         result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
         # Check for errors
@@ -412,7 +412,7 @@ class HardwareMapWindow(QMainWindow):
         table = QTableWidget()
         table.setColumnCount(2)
         table.setHorizontalHeaderLabels(["Attribute", "Value"])
-        table.horizontalHeader().setStretchLastSection(True)
+        table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
 
         info_lines = [line.strip() for line in info.splitlines() if ':' in line]
         table.setRowCount(len(info_lines))

@@ -142,9 +142,9 @@ printf("Configured Voltage: %.1f V\n", conf_voltage / 10.0);
 void ram() {
     std::ifstream f(DMI_TABLE_PATH, std::ios::binary);
     if (!f) {
-        std::cerr << "Failed to open DMI table" << std::endl;
-        return;
-    }
+    std::cerr << "Failed to open DMI table. Error code: " << errno << std::endl;
+    return;
+   }
 
     f.seekg(0, std::ios::end);
     size_t length = f.tellg();

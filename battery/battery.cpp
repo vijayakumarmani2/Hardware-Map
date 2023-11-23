@@ -27,7 +27,7 @@ void battery() {
     string manufacturerFile = batteryPath + "manufacturer";
     string modelNameFile = batteryPath + "model_name";
     string technologyFile = batteryPath + "technology";
-    string healthFile = batteryPath + "health";
+    //string healthFile = batteryPath + "health";
 
     string status = readValueFromFile(statusFile);
     string capacity = readValueFromFile(capacityFile);
@@ -36,7 +36,7 @@ void battery() {
     string manufacturer = readValueFromFile(manufacturerFile);
     string modelName = readValueFromFile(modelNameFile);
     string technology = readValueFromFile(technologyFile);
-    string health = readValueFromFile(healthFile);
+  //  string health = readValueFromFile(healthFile);
 
     // Convert voltage from microvolts to volts
     double voltageVolts = stod(voltageMicrovolts) / 1000000.0; // Convert to volts
@@ -51,7 +51,7 @@ void battery() {
     cout << "Battery Capacity: " << capacity << "%" << endl;
     cout << "Battery Voltage: " << fixed << setprecision(2) << voltageVolts << " volts" << endl;
     cout << "Battery Current: " << fixed << setprecision(2) << currentAmperes << " amperes" << endl;
-    cout << "Battery Health: " << health << endl;
+  //  cout << "Battery Health: " << health << endl;
     
     
     

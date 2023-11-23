@@ -15,6 +15,8 @@ BIN_DIR="$INSTALL_DIR/bin"
 SHARE_DIR="$INSTALL_DIR/share"
 GUI_DIR="$SHARE_DIR/hardware_map_gui"
 
+sudo chmod +r /sys/firmware/dmi/tables/DMI
+
 #install cmake make
 sudo apt-get install cmake make
 
