@@ -37,13 +37,13 @@ mkdir -p "$GUI_DIR"
 cp -r hardware_map_gui/* "$GUI_DIR"
 
 # Create a virtual environment for the application's Python dependencies
-apt install python3-venv
+sudo apt install python3-venv
 VENV_DIR="$GUI_DIR/venv"
 python3 -m venv "$VENV_DIR"
 source "$VENV_DIR/bin/activate"
 
 # Install Python dependencies
-pip install ezodf==0.3.2 openpyxl==3.1.2 PyQt5==5.15.10 PyQt5_sip==12.13.0 python_docx==1.0.1
+pip install ezodf==0.3.2 openpyxl==3.1.2 PyQt5==5.15.10 PyQt5_sip==12.13.0 python_docx==1.0.1 PyQt5
 
 # Deactivate the virtual environment
 deactivate
