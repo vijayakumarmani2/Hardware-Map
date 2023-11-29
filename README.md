@@ -62,23 +62,23 @@ Use the following commands to retrieve hardware information:
 
    - **CPU Information:**
 
-       hardware_map cpu
+        hardware_map cpu
 
    - **Webcam Information:**
 
-       hardware_map webcam
+        hardware_map webcam
 
    ... (other hardware components)
 
    - **All Hardware Information:**
  
-       hardware_map all
+        hardware_map all
 
 ## Graphical User Interface (GUI):
 
 The GUI provides a user-friendly way to interact with the Hardware Map Tool. To launch the GUI, run:
 
-   hardware_map_gui
+    hardware_map_gui
 
 
 In the GUI, you can click on specific buttons (e.g., "Battery," "Compare") to retrieve hardware information or perform comparisons.
@@ -87,10 +87,10 @@ In the GUI, you can click on specific buttons (e.g., "Battery," "Compare") to re
 ## Example Usage
 
 ### Get information about the CPU using the command line
-    hardware_map cpu
+     hardware_map cpu
 
 ### Launch the GUI for a more interactive experience
-    hardware_map_gui
+     hardware_map_gui
 
 Feel free to explore the various buttons in the GUI to access different hardware details and features.
 
