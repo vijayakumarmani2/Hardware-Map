@@ -143,6 +143,5 @@ void display_cpuinfo(const std::map<std::string, std::vector<std::string>>& cpui
 void cpu() {
     auto cpuinfo_data = parse_cpuinfo();
     display_cpuinfo(cpuinfo_data);
- //   return 0;
 }
 

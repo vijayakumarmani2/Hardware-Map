@@ -13,7 +13,6 @@ string readValueFromFile(const string& filename) {
     ifstream file(filename);
     if (!file) {
         cerr << "Failed to open file- " << filename << endl;
-       // exit(1);
     }
     string value;
     file >> value;
@@ -51,8 +50,6 @@ void battery() {
              currentMicroamperes = readValueFromFile(filePath);
         }
     }
-   // string currentMicroamperes = readValueFromFile(currentFile);
-  //  string health = readValueFromFile(healthFile);
 
     // Convert voltage from microvolts to volts
     double voltageVolts = stod(voltageMicrovolts) / 1000000.0; // Convert to volts
@@ -67,11 +64,5 @@ void battery() {
     cout << "Battery Capacity: " << capacity << "%" << endl;
     cout << "Battery Voltage: " << fixed << setprecision(2) << voltageVolts << " volts" << endl;
     cout << "Battery Current: " << fixed << setprecision(2) << currentAmperes << " amperes" << endl;
-  //  cout << "Battery Health: " << health << endl;
     
-    
-    
-    
-
-    //return 0;
 }

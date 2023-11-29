@@ -57,6 +57,4 @@ void disk() {
     for (const std::string &disk : diskList) {
         getDiskInfo(disk);
     }
-
-   // return 0;
 }

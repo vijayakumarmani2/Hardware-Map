@@ -6,7 +6,6 @@ void display() {
     Display* display = XOpenDisplay(nullptr);
     if (!display) {
         std::cerr << "Unable to open X display." << std::endl;
-        //return 1;
     }
 
     int screen = DefaultScreen(display);
@@ -39,7 +38,5 @@ void display() {
 
     XRRFreeScreenResources(resources);
     XCloseDisplay(display);
-
-   // return 0;
 }
 
