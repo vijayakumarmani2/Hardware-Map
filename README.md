@@ -31,22 +31,22 @@ The Hardware Map Tool is a application that provides comprehensive information a
 
 To install the Hardware Map Tool and GUI, follow these simple steps:
 
-### Prerequisites
+### Prerequisites:
 
 - CMake (version 3.0 or higher)
 - Make
 - C++ compiler (GCC or Clang)
 - Python 3
 
-### Clone the Repository
+### Clone the Repository:
 
+   git clone https://github.com/vijayakumarmani2/Hardware-Map.git
+   cd Hardware-Map
 
-git clone https://github.com/vijayakumarmani2/Hardware-Map.git
-cd Hardware-Map
+### Run the Install Script:
 
-### Run the Install Script
+    sudo ./install.sh
 
-sudo ./install.sh
 
 The install.sh script will handle the installation of necessary packages for both the command line tool and the GUI and also will the build the tool on your system. Once the script completes, the Hardware Map Tool will be set up as a desktop application.
 
@@ -62,33 +62,34 @@ Once installed, you can use the Hardware Map Tool in two ways:
 
    - **CPU Information:**
 
-                  $ hardware_map cpu
+      hardware_map cpu
 
    - **Webcam Information:**
 
-                  $ hardware_map webcam
+      hardware_map webcam
 
    ... (other hardware components)
 
    - **All Hardware Information:**
  
-                  $ hardware_map all
+      hardware_map all
 
 ## Graphical User Interface (GUI):
 
-    The GUI provides a user-friendly way to interact with the Hardware Map Tool. To launch the GUI, run:
+   ### The GUI provides a user-friendly way to interact with the Hardware Map Tool. To launch the GUI, run:
 
-                  $ hardware_map_gui
+       hardware_map_gui
 
-    In the GUI, you can click on specific buttons (e.g., "Battery," "Compare") to retrieve hardware information or perform comparisons.
+
+   In the GUI, you can click on specific buttons (e.g., "Battery," "Compare") to retrieve hardware information or perform comparisons.
 
 
 ## Example Usage
 
-# Get information about the CPU using the command line
+### Get information about the CPU using the command line
 hardware_map cpu
 
-# Launch the GUI for a more interactive experience
+### Launch the GUI for a more interactive experience
 hardware_map_gui
 
 Feel free to explore the various buttons in the GUI to access different hardware details and features.
