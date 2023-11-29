@@ -75,7 +75,7 @@ Use the following commands to retrieve hardware information:
 
 ## Graphical User Interface (GUI)
 
-The GUI provides a user-friendly way to interact with the Hardware Map Tool. To launch the GUI, run:
+The GUI provides a user-friendly way to interact with the Hardware Map Tool. To launch the GUI, go to your system laucher and, find & click "Hardware Map Tool", or run in terminal:
 
     hardware_map_gui
 
