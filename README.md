@@ -62,17 +62,17 @@ Use the following commands to retrieve hardware information:
 
    - **CPU Information:**
 
-        hardware_map cpu
+         hardware_map cpu
 
    - **Webcam Information:**
 
-        hardware_map webcam
+         hardware_map webcam
 
    ... (other hardware components)
 
    - **All Hardware Information:**
  
-        hardware_map all
+         hardware_map all
 
 ## Graphical User Interface (GUI):
 
