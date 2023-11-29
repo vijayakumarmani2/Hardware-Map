@@ -22,9 +22,8 @@ The Hardware Map Tool is a application that provides comprehensive information a
 
 ## Table of Contents
 - [Installation](#installation)
-- [Usage](#usage)
-- [Command Line Interface (CLI)](#command-line-interface-(CLI))
-- [Graphical User Interface (GUI)](#graphical-user-interface-(GUI))
+- [Command Line Interface (CLI)](#command-line-interface-(cli))
+- [Graphical User Interface (GUI)](#graphical-user-interface-(gui))
 - [Example Usage](#example-usage)
 
 ## Installation
