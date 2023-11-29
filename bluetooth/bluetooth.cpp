@@ -88,7 +88,7 @@ void bluetooth() {
     ouiWithoutHyphensAndSpaces.erase(std::remove_if(ouiWithoutHyphensAndSpaces.begin(), ouiWithoutHyphensAndSpaces.end(), ::isspace), ouiWithoutHyphensAndSpaces.end());
     ouiWithoutHyphensAndSpaces.erase(std::remove_if(ouiWithoutHyphensAndSpaces.begin(), ouiWithoutHyphensAndSpaces.end(), [](char c){ return c == '-'; }), ouiWithoutHyphensAndSpaces.end());
 
-    std::string ouiFilePath = "/home/vijay-16033/Documents/Repos_handler/Hardware_Map/oui.txt";
+    std::string ouiFilePath = "/usr/share/misc/oui.txt";
     std::map<std::string, std::string> vendorLookupTable = createVendorLookupTable(ouiFilePath);
     //std::cout << "Extracted OUI: " << oui << std::endl;
 

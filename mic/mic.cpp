@@ -57,7 +57,7 @@ void mic() {
 
 // Function to look up the vendor name from the pci.ids file
 std::string getVendorName_mic(const std::string& vendorId) {
-    std::ifstream file("/home/vijay-16033/Documents/Repos_handler/Hardware_Map/pci.ids");
+    std::ifstream file("/usr/share/misc/pci.ids");
     std::string line;
     while (std::getline(file, line)) {
         // Check if the line is a comment
@@ -84,7 +84,7 @@ std::string getVendorName_mic(const std::string& vendorId) {
 }
 
 std::string getDeviceName_mic(const std::string& vendorId, const std::string& deviceId) {
-    std::ifstream pciIdsFile("/home/vijay-16033/Documents/Repos_handler/Hardware_Map/pci.ids");
+    std::ifstream pciIdsFile("/usr/share/misc/pci.ids");
     std::string line;
     bool deviceSection = false;
 

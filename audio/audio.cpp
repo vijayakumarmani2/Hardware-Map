@@ -6,7 +6,7 @@
 
 // Function to look up the vendor name from the pci.ids file
 std::string getVendorName(const std::string& vendorId) {
-    std::ifstream file("/home/vijay-16033/Documents/Repos_handler/Hardware_Map/pci.ids");
+    std::ifstream file("/usr/share/misc/pci.ids");
     std::string line;
     while (std::getline(file, line)) {
         // Check if the line is a comment
@@ -33,7 +33,7 @@ std::string getVendorName(const std::string& vendorId) {
 }
 
 std::string getDeviceName(const std::string& vendorId, const std::string& deviceId) {
-    std::ifstream pciIdsFile("/home/vijay-16033/Documents/Repos_handler/Hardware_Map/pci.ids");
+    std::ifstream pciIdsFile("/usr/share/misc/pci.ids");
     std::string line;
     bool deviceSection = false;
 
@@ -139,9 +139,10 @@ void audio() {
                     std::cout <<"Vendor Name: " << getVendorName(vendorId) << std::endl;
                 }
 
-                  // Print vendorId for debugging
+                // Print vendorId for debugging
                 std::cout << "vendorId (from sysfs): " << vendorId << std::endl;
-                 // Get the device ID from sysfs
+
+                // Get the device ID from sysfs
                 std::ostringstream deviceIdPathStream;
                 deviceIdPathStream << "/sys/class/sound/card" << cardNum << "/device/device";
                 std::string deviceIdPath = deviceIdPathStream.str();
@@ -153,14 +154,12 @@ void audio() {
                     }
                 }
 
-                 // Print deviceId for debugging
+                // Print deviceId for debugging
                 std::cout << "Device ID (from sysfs): " << deviceId << std::endl;
 
-                
                 std::cout <<"Device Name: " << getDeviceName(vendorId, deviceId) << std::endl;
             }
             snd_ctl_close(ctl);
         }
     }
-   // return 0;
 }

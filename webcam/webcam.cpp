@@ -166,7 +166,7 @@ std::set<std::string> printedVendors;
 // char cwd[1024];
 // if (getcwd(cwd, sizeof(cwd)) != NULL) {
     //std::string fullPath = std::string(cwd) + "/../usb.ids"; 
-     auto usbIds = loadUsbIds_1("/home/vijay-16033/Documents/Repos_handler/Hardware_Map/usbmap/usb.ids");
+     auto usbIds = loadUsbIds_1("/usr/share/misc/usb.ids");
       // Create a list of devices in the 'video4linux' subsystem
     enumerate = udev_enumerate_new(udev);
     udev_enumerate_add_match_subsystem(enumerate, "video4linux");

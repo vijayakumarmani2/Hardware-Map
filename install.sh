@@ -17,6 +17,8 @@ GUI_DIR="$SHARE_DIR/hardware_map_gui"
 
 sudo chmod +r /sys/firmware/dmi/tables/DMI
 
+sudo cp -r oui.txt /usr/share/misc/oui.txt
+
 #install cmake make
 sudo apt-get install cmake make
 
