@@ -22,7 +22,7 @@ The Hardware Map Tool is a application that provides comprehensive information a
 
 ## Table of Contents
 - [Installation](#installation)
-- [Command Line Interface (CLI)](#command-line-interface-(cli))
+- [Command Line Interface (CLI)](#command-line-interface)
 - [Graphical User Interface (GUI)](#graphical-user-interface-(gui))
 - [Example Usage](#example-usage)
 
@@ -55,7 +55,7 @@ Usage
 
 Once installed, you can use the Hardware Map Tool in two ways:
 
-## Command Line Interface (CLI)
+## Command Line Interface
 
 Use the following commands to retrieve hardware information:
 
