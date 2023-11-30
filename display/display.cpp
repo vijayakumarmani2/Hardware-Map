@@ -1,3 +1,13 @@
+/*******************************************************************************
+ * Company: Zoho Corporation
+ * Author: Vijayakumar Mani
+ * File: display.cpp
+ * Description: to retrive display information from linux system
+ * Date: 
+ * 
+ * Copyright (c) 2023 Zoho Corporation. All rights reserved.
+ ******************************************************************************/
+
 #include <iostream>
 #include <X11/Xlib.h>
 #include <X11/extensions/Xrandr.h>

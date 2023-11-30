@@ -1,5 +1,14 @@
 #!/bin/bash
 
+#/*******************************************************************************
+ #* Company: Zoho Corporation
+ #* Author: Vijayakumar Mani
+ #* File: install.sh
+ #* Description: installing necessary dependencies and set-up the application in the system
+ #* Date: 
+ #* 
+ #* Copyright (c) 2023 Zoho Corporation. All rights reserved.
+ #******************************************************************************/
 # Exit on error
 set -e
 

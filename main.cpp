@@ -1,3 +1,13 @@
+/*******************************************************************************
+ * Company: Zoho Corporation
+ * Author: Vijayakumar Mani
+ * File: main.cpp
+ * Description: this is a main program to handle all sub functions
+ * Date: 
+ * 
+ * Copyright (c) 2023 Zoho Corporation. All rights reserved.
+ ******************************************************************************/
+
 #include <iostream>
 
 void cpu();
@@ -6,7 +16,6 @@ void ram();
 void memory();
 void display();
 void webcam();
-//void d();
 void battery();
 void disk();
 void wifi();

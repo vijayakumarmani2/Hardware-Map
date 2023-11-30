@@ -1,38 +1,12 @@
-// #include <iostream>
-// #include <fstream>
-// #include <string>
-
-// // Function to read a specific file in sysfs and return its contents as a string
-// std::string readSysfsFile(const std::string& filePath) {
-//     std::ifstream file(filePath);
-//     if (!file.is_open()) {
-//         std::cerr << "Failed to open " << filePath << std::endl;
-//         return "";
-//     }
-
-//     std::string content;
-//     std::getline(file, content);
-//     file.close();
-
-//     return content;
-// }
-
-// void gpu() {
-//     const std::string sysfsPath = "/sys/class/drm/card0/device"; // Adjust the path as needed for your system
-
-//     std::string vendor = readSysfsFile(sysfsPath + "/vendor");
-//     std::string device = readSysfsFile(sysfsPath + "/device");
-
-//     if (!vendor.empty() && !device.empty()) {
-//         std::cout << "GPU Vendor: " << vendor << std::endl;
-//         std::cout << "GPU Device: " << device << std::endl;
-//     } else {
-//         std::cerr << "Failed to retrieve GPU information from sysfs" << std::endl;
-//     }
-
-//   //  return 0;
-// }
-
+/*******************************************************************************
+ * Company: Zoho Corporation
+ * Author: Vijayakumar Mani
+ * File: gpu.cpp
+ * Description: to retrive gpu information from linux system
+ * Date: 
+ * 
+ * Copyright (c) 2023 Zoho Corporation. All rights reserved.
+ ******************************************************************************/
 
 #include <iostream>
 #include <fstream>
@@ -55,7 +29,6 @@ std::string readSysfsFile(const std::string& filePath) {
     return content;
 }
 
-// Function to parse the pci.ids database and store vendor and device names
 // Function to parse the pci.ids database and store vendor and device names
 std::unordered_map<std::string, std::string> parsePciIds() {
     std::unordered_map<std::string, std::string> pciIdMap;

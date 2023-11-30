@@ -1,3 +1,13 @@
+/*******************************************************************************
+ * Company: Zoho Corporation
+ * Author: Vijayakumar Mani
+ * File: ram.cpp
+ * Description: to retrive ram information from linux system
+ * Date: 
+ * 
+ * Copyright (c) 2023 Zoho Corporation. All rights reserved.
+ ******************************************************************************/
+
 #include <iostream>
 #include <fstream>
 #include <vector>

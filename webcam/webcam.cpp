@@ -1,3 +1,13 @@
+/*******************************************************************************
+ * Company: Zoho Corporation
+ * Author: Vijayakumar Mani
+ * File: webcam.cpp
+ * Description: to retrive webcam information from linux system
+ * Date: 
+ * 
+ * Copyright (c) 2023 Zoho Corporation. All rights reserved.
+ ******************************************************************************/
+
 #include <fcntl.h>
 #include <linux/videodev2.h>
 #include <sys/ioctl.h>
@@ -14,8 +24,6 @@
 #include <unistd.h>
 #include <set>
 #include <cstdint>
-
-
 
 // Function to fetch details using udevadm
 std::string execCmd(const char* cmd) {
