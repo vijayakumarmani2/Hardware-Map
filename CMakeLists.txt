@@ -37,7 +37,7 @@ if(NOT ALSA_LIBRARY)
 endif()
 
 # When defining your target, link against the found libraries
-add_executable(hardware_map main.cpp cpu/cpu.cpp webcam/webcam.cpp memory/memory.cpp ram/ram.cpp display/display.cpp wc.cpp disk/disk.cpp battery/battery.cpp d.cpp wireless/wifi.cpp ethernet/ethernet.cpp bluetooth/bluetooth.cpp keyboard/keyboard.cpp mouse/mouse.cpp touchpad/touchpad.cpp audio/audio.cpp mic/mic.cpp gpu/gpu.cpp sys_info/sys_info.cpp)
+add_executable(hardware_map main.cpp cpu/cpu.cpp webcam/webcam.cpp memory/memory.cpp ram/ram.cpp display/display.cpp disk/disk.cpp battery/battery.cpp d.cpp wireless/wifi.cpp ethernet/ethernet.cpp bluetooth/bluetooth.cpp keyboard/keyboard.cpp mouse/mouse.cpp touchpad/touchpad.cpp audio/audio.cpp mic/mic.cpp gpu/gpu.cpp sys_info/sys_info.cpp)
 target_link_libraries(hardware_map ${X11_LIBRARIES} ${X11_Xrandr_LIB} ${LIBUDEV_LIBRARIES} ${CURL_LIBRARIES} bluetooth ${ALSA_LIBRARY}) 
 
 install(TARGETS hardware_map DESTINATION bin)
